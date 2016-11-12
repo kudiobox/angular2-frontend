@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser'
 import { NavbarComponent } from './navbar/navbar.component'
+import { setTitle } from './utils'
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component'
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Home';
-  constructor(private titleService: Title) {
-    this.titleService.setTitle(this.title);
+  pageTitle = 'Home';
+  constructor() {
+    setTitle(this.pageTitle);
   }
 }
