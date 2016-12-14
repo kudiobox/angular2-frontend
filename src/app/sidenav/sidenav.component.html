@@ -1,3 +1,12 @@
-<p>
-  sidenav works!
-</p>
+<aside class="slideInLeft" [hidden]="isClosed">
+  <div class="header">
+    <input type="text" class="form-control" value="">
+  </div>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</aside>
+<button type="button" class="btn btn-primary" (click)="toggle($event)">Toggle</button>

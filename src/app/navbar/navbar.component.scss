@@ -6,9 +6,18 @@
     margin-left: 1rem;
     margin-bottom: -2rem;
   }
-  @media (max-width: nth($grid-breakpoints, 3)) {
+  .navbar-brand img {
+    max-height: 3rem;
+  }
+  @media screen and (max-width: 500px) {
     .signup {
       display: none;
     }
   }
 }
+
+// @media (min-width: nth($grid-breakpoints, 3)) {
+//   .navbar {
+//     background-color: $brand-primary;
+//   }
+// }

@@ -1,0 +1,8 @@
+@import '../../scss/variables';
+$brand-primary: #FF530D;
+
+section {
+  .container {
+    background-color: $brand-primary;
+  }
+}
