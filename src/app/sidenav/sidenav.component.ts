@@ -12,7 +12,7 @@ export class SidenavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.isClosed= true;
+    this.isClosed = true;
   }
 
   toggle(e) {
