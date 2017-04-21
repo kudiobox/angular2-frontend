@@ -1,0 +1,12 @@
+<aside class="slideInLeft" [hidden]="isClosed">
+  <div class="header">
+    <input type="text" class="form-control" value="">
+  </div>
+  <ul class="menu">
+    <li><a (click)="toggle($event)" routerLink="">Home</a></li>
+    <li><a (click)="toggle($event)" routerLink="/services">Services</a></li>
+    <li><a (click)="toggle($event)" routerLink="/about">About</a></li>
+    <li><a (click)="toggle($event)" routerLink="/contact">Contact</a></li>
+  </ul>
+</aside>
+<button type="button" class="btn btn-primary" (click)="toggle($event)">Toggle</button>
